@@ -6,18 +6,29 @@ public class Main {
     public static void main(String[] args) {
 
 
+//        Java Program to create signup for banks for users if different age and account
 
-        int a , b ,temp;
-        Scanner value = new Scanner(System.in);
-        System.out.println("Enter two variables values");
-        a =value.nextInt();
-        b=value.nextInt();
+        Scanner age = new Scanner(System.in);
+        System.out.println("Enter your Age");
+        int yourAge = age.nextInt();
 
-        temp =b ;
-        b =a ;
-        a = temp;
-        System.out.println("The value of first var is now " + a);
-        System.out.println("The value of Second var is now " + b);
+
+        if (yourAge < 21) {
+
+            System.out.println("You are not eligible");
+
+        }
+        else if (yourAge > 21 && yourAge < 55){
+            System.out.println("Savings Account ");
+        }
+        else if (yourAge > 55 ){
+
+            System.out.println("Senior Citizen Account ");
+        }
+
+
+
+
 
 
 
