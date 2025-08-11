@@ -5,15 +5,21 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your Name");
-        String name;
-        name = sc.nextLine();
-        System.out.println("Hello,"  + name);
 
-        System.out.println("Enter your Age");
-        int a = sc.nextInt();
-        System.out.println("Your age is " + a);
-        sc.close();
+
+        int a , b ,temp;
+        Scanner value = new Scanner(System.in);
+        System.out.println("Enter two variables values");
+        a =value.nextInt();
+        b=value.nextInt();
+
+        temp =b ;
+        b =a ;
+        a = temp;
+        System.out.println("The value of first var is now " + a);
+        System.out.println("The value of Second var is now " + b);
+
+
+
         }
     }
